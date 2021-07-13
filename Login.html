@@ -1,0 +1,117 @@
+<!DOCTYPE.html>
+<html>
+<head> 
+<style type="text/css">
+body {      
+    background:url("intro2.jpg");
+    background-size:1500px;
+    background-attachment:scroll;
+    background-repeat:no repeat;
+    color:wooden brown;
+    font-size:500 px;
+    font-family: Aerial;
+    
+    }
+    
+h1   {
+    color: SolidBlack;
+    font-size:350%;
+    font-family:Aerial;
+    font-style:absolute;
+    text-align: center;
+    }
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:1300px;
+    
+    }
+li  {
+    float:left;
+    }
+li a {
+    display:block;
+    padding:15px;
+    font-size:20px;
+    color:#ffffff;
+    background-color:#000022;
+   }
+li a.active{
+    background-color:#000000;
+    color:#ffffff;
+   }
+li a:hover:not(.active) {
+    background-color:#ffffff;
+    color:#b4b4b4;}
+* {
+  box-sizing: border-box;
+  }
+
+.container {
+  position: absolute;
+  left: 220px;
+  margin: 50px;
+  max-width: 500px;
+  padding: 16px;
+  background-color:#f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+}
+
+
+input[type=text]:focus,input[type=password]:focus {
+  background-color: #ffffff;
+  outline: none;
+  padding:15px;
+}
+
+.btn {
+  background-color: #020202;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button{
+  color: #000000;
+  outline-color: White;
+  text-align: center;
+  float:right;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  width:1000px;
+  right:50px;
+}
+</style>
+<body>
+    <br>
+    <br>
+    <br>
+    
+<div class>
+    <form action="/action_page.php" class="container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+  
+      <button type="submit" class="btn">Login</button>
+   
+    </form>
+  </div>
+</body>
+</html>
